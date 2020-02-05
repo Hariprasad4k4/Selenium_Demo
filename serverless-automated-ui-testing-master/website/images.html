@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Copyright 2017-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: MIT-0
+-->
+<html>
+  <head>
+    <title>AWS CodeBuild automation - Images.</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      function fill_text()
+      {
+        var elm = document.getElementById('form_field_id')
+        var form_value = elm.textContent || elm.innerText;
+        var display_text = "You have entered '" + form_value + "' in the form.";
+        document.getElementById('formtext').innerHTML = display_text;
+      }
+    </script>
+    <h1>Some images to test.</h1>
+      <img id= "image1" src="test1.png" alt="Test Image 1" style="width:200px;height:200px;">
+      <img id= "image2" src="test2.png" alt="Test Image 2" style="width:200px;height:200px;">
+      <img id= "image3" src="test3.png" alt="Broken Image">
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Copyright 2017-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: MIT-0
+-->
+<html>
+  <head>
+    <title>AWS CodeBuild automation - Button Click.</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+    function button_display(selected)
+    {
+      if (selected == 'reveal')
+        {
+        display_text = "<br>" + "AWS CodeBuild is a fully managed build service that compiles source code, runs tests, and produces software packages that are ready to deploy.";
+        }
+      else if (selected == 'reset')
+        {
+        window.location.reload();
+        display_text = '';
+        }
+      document.getElementById("cbbutton").innerHTML += display_text;
+    }
+    </script>
+    <h1>Click the button...</h1>
+    <button id="displaybtn" type="button" onclick = "button_display('reveal')">Display Text!!!</button>
+    <button id="resetbtn" type="button" onclick = "button_display('reset')">Reset Text!!!</button>
+    <div id = "cbbutton">
+    </div>
+  </body>
+</html>
